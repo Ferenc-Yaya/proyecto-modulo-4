@@ -3,7 +3,7 @@ name: proyecto-modulo-4-ferenc
 services:
   mysql:
     image: mysql:8.0.41
-    container_name: mysql
+    container_name: mysql-ferenc
     restart: no
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -17,7 +17,7 @@ services:
 
   redis:
     image: redis:8.0.0-alpine
-    container_name: redis
+    container_name: redis-ferenc
     restart: no
     ports:
       - "6379:6379"

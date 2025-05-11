@@ -1,10 +1,16 @@
 package pe.codegym.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.Type;
+
+import java.math.BigDecimal;
 
 @Entity
 @Table (schema = "world", name = "country_language")
+@Getter
+@Setter
 public class CountryLanguage {
 
     @Id
@@ -24,5 +30,5 @@ public class CountryLanguage {
     private Boolean isOfficial;
 
 
-    private double percentage;
+    private BigDecimal percentage;
 }

@@ -1,12 +1,16 @@
 package pe.codegym.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.util.Set;
 
 @Entity
 @Table (schema = "world", name = "Country")
+@Getter
+@Setter
 public class Country {
     @Id
     @Column (name = "id")
