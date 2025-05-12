@@ -8,13 +8,13 @@ import java.math.BigDecimal;
 import java.util.Set;
 
 @Entity
-@Table (schema = "world", name = "Country")
+@Table (schema = "world", name = "country")
 @Getter
 @Setter
 public class Country {
     @Id
     @Column (name = "id")
-    private int id;
+    private Integer id;
 
 
     private String code;
@@ -25,7 +25,7 @@ public class Country {
 
     private String name;
 
-    @Column (name = "countinent")
+    @Column (name = "continent")
     @Enumerated (EnumType.ORDINAL)
     private Continent continent;
 
@@ -47,7 +47,7 @@ public class Country {
 
     private BigDecimal gnp;
 
-    @Column (name = "gnp_id")
+    @Column (name = "gnpo_id")
     private BigDecimal gnpId;
 
     @Column (name = "local_name")

@@ -16,7 +16,7 @@ public class City {
     private String name;
 
     @ManyToOne
-    @JoinColumn (name = "country_code")
+    @JoinColumn (name = "country_id")
     private Country country;
 
     private String district;
